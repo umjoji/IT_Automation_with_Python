@@ -27,7 +27,7 @@ def error_search(log_file):
 
 def file_output(returned_errors):
     """Writes all the errors given in the list parameter to a file"""
-    with open("Enter file path of where you want the error log to be: ", "w") as file:
+    with open(input("Enter file path of where you want the error log to be: "), "w") as file:
         for error in returned_errors:
             file.write(error)
         file.close()
